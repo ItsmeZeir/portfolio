@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+        <script src="https://kit.fontawesome.com/51463cb27c.js" crossorigin="anonymous"></script>
+    </head> 
+    <body>
+    <!-- NAV ITEMS and LOGO -->
+    <div id="header">
+        <div class="container"> 
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>
+                    Web Developer/Software Engineer
+                </p>
+                <h1>Hi, I'm <span>Adrian Pascua</span><br> and this is my personal<br> Portfolio Website</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Software Engineer with a focus on results who has maintained and implemented scalable software solutions for 3+ years. 
+                    Proficient in a variety of programming languages and frameworks, primarily JavaScript (React.js, Electron.js), and knowledgeable 
+                    about both front-end and back-end technologies.</p>
+                     
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('education')">Education</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('skills')">Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2015-2019</span><br>Bachelor of Science in Information Technology at PUP Manila</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Sept. 2020 - Current</span><br>Junior Programmer at novaSOLUTIONS (Philippines) Inc.</li>
+                            <li><span>Aug. 2019 - Jan. 2020</span><br>Application Support Engineer at Accenture</li>
+                            <li><span>Jul. 2019 - Aug 2019</span><br>Associate Software Engineer at Accenture</li>     
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>React.js/Electron.js</span><br>Developing app using JavaScript</li>
+                            <li><span>Java</span><br>Building Java apps</li>     
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Est quae itaque fuga molestiae provident quasi, fugiat obcaecati, 
+                        veniam, vero delectus ullam alias ipsam? Quas odio iure similique, 
+                        quam deleniti placeat.</p>
+                        <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Est quae itaque fuga molestiae provident quasi, fugiat obcaecati, 
+                        veniam, vero delectus ullam alias ipsam? Quas odio iure similique, 
+                        quam deleniti placeat.</p>
+                        <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Est quae itaque fuga molestiae provident quasi, fugiat obcaecati, 
+                        veniam, vero delectus ullam alias ipsam? Quas odio iure similique, 
+                        quam deleniti placeat.</p>
+                        <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to talented people around the world. 
+                            Download it from Play Store</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to talented people around the world. 
+                            Download it from Play Store</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to talented people around the world. 
+                            Download it from Play Store</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                   <h1 class="sub-title">Contact Me</h1>
+                   <p><i class="fas fa-paper-plane"></i> adrian.pascua09@yahoo.com</p>
+                   <p><i class="fas fa-phone-square-alt"></i> 09194195979</p>
+                   <div class="social-icons">
+                        <a href="https://www.facebook.com/Kuys.AdrianP"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/iancpascua/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/adrian-pascua-7a96121a3"><i class="fa-brands fa-linkedin"></i></a>
+                   </div>
+                   <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email Address" required>
+                        <input type="date" name="Date" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg-sent"></span>
+                    <span id="msg-error"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- copyright -->
+    <div class="copyright">
+        <p>Copyright © Adrian C. Pascua. Made with <i class="fa-solid fa-heart"></i> by yours truly.</p>
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby4S6yf2Bbd_x7MqSVDp7n-SjJdGROmtZ_EC2lRlBiQIrFwEKCZKQDmh7imzsKVMwJTBA/exec'
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg-sent")
+        const errormsg = document.getElementById("msg-error")
+
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000);
+                form.reset();
+            })
+            .catch(error => {
+                errormsg.innerHTML = "Error: Message failed to send"
+            })
+        })
+    </script>
+
+    </body>
+</html>
